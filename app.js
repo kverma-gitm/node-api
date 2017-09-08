@@ -18,14 +18,7 @@ mongoose.connection.once('open',function(){
 var blog = require('./schema.js');
 var model = mongoose.model('bmodel');
 
-//middlewares
-app.use(function(req,res,next){
-	console.log("Time n Date Log ",new Date());
-	console.log("Request url Log ",req.originalUrl);
-	console.log("Request Method Log ",req.method);
-	console.log("Request Ip address Log ",req.ip);
-	next();
-});
+
 
 //first page
 
